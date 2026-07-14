@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Videogame Pro Team Recruiting</h1>
+    <p id="description">Thank you choosing our team!</p>
+
+    <form id="survey-form">
+      
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input 
+        type="text" 
+        id="name" 
+        name="name"
+        required
+        placeholder="Enter your name"
+        />
+      </div>
+    
+      <div class="form-group">  
+        <label for="email" id="email-label">Email:</label>
+        <input 
+        type="email"
+        id="email"
+        name="email"
+        minlength="2"
+        maxlength="30"
+        required
+        placeholder="Enter your Email"
+        />
+      </div>
+    
+
+      <div class="form-group">
+        <label for="number" id="number-label">Age (optional):</label>
+        <input 
+        type="number"
+        id="number"
+        name="number"
+        min="10"
+        max="50"
+        placeholder="Age"
+        />
+      </div>
+
+      <div class="form-group">
+        <p>What rank are you?</p>
+        <select id="dropdown">
+          <option value="metals">Metals</option>
+          <option value="diamond">Diamond</option>
+          <option value="master">Master</option>
+          <option value="grandmaster">Grandmaster</option>
+          <option value="champion">Champion</option>
+        </select>
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Do you have a microphone?</legend>
+        <input 
+        type="radio" 
+        id="yes-option" 
+        name="microphone"
+        value="yes"
+        checked
+        />
+        <label for="yes-option">Yes</label>
+
+        <input 
+        type="radio" 
+        id="no-option" 
+        name="microphone"
+        value="no"
+        />
+        <label for="no-option">No</label>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend>What is your goal in joining a team? (Select all that apply)</legend>
+        <input 
+        type="checkbox" 
+        id="improving" 
+        name="improving"
+        value="improving">
+        <label for="improving">Improving my skills</label>
+
+        <input 
+        type="checkbox" 
+        id="making-friends" 
+        name="making-friends"
+        value="making-friends">
+        <label for="making-friends">Making friends</label>
+
+        <input 
+        type="checkbox" 
+        id="climbing-ranks" 
+        name="climbing-ranks"
+        value="climbing-ranks">
+        <label for="climbing-ranks">Climbing ranks</label>
+      </fieldset>
+
+      <div class="form-group">
+        <p>Any extra comments?</p>
+        <textarea 
+        id="comments" 
+        name="comments"
+        rows="6"
+        cols="30"
+        placeholder="Type your comments here..."
+        ></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submit" name="submit">Submit</button>
+      </div>
+    </form>
+
+
+  </body>
+</html>
